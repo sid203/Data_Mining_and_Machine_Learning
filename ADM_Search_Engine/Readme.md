@@ -10,5 +10,5 @@ Just a basic search engine.
 4. Search Engine deals with the creation of inverted index, query processing and cosine similarity matching between the query and other documents based on TF-IDF scores. 
 
 
-Note: This is just a basic search engine and it will be improved a lotttttt soon. 
+Note: This is just a basic search engine and it will be improved a lotttttt soon. And the advanced search engine...errr performs pretty bad :/
 
