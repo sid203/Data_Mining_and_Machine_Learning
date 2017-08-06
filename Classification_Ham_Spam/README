@@ -1,0 +1,7 @@
+The scripts perform classification between Ham and Spam comments. 
+
+Classifiers used: KNN, non Linear SVM, Random Forest. 
+GridSearch CV and Pipeline objects used to select the parameters. 
+
+
+The data is available in the zip files. 
