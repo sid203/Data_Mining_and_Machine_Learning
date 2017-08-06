@@ -1,0 +1,44 @@
+VECTOR SPACE MODEL 
+
+
+######################################################################################################################
+How to set up the search engine ?
+
+1. Unzip Data_Files.zip to your current working directory.
+
+2. The scripts are .ipynb format. So you need juypter IDE to open the python notebooks.
+
+3. Install jupyter notebook and upload the .ipynb files. 
+
+4. Also paste ADM_heapfunctions.py in your current working directory.
+
+5. Execute the file ADM_Query_Processing.ipynb to run the search engine. 
+	
+	a. Run The last block of code run_query().
+	b. Enter your keywords and see the results of the search engine. 
+
+
+######################################################################################################################
+Description of all the files. 
+
+1. ADM_check_non_existing_recipe.ipynb : This checks which of the files scraped do not have any text in it 
+					  (since some recipes are taken down from the BBC website, might be 
+					   possible that it doesnt exist ) 
+
+2. ADM_clean_data.ipynb : Cleans all the files present in ./ADM_dataset/raw and creates the cleaned files in 
+			  ./ADM_dataset/cleaned
+
+3. ADM_Extract_all_links_data.ipynb : Scrapes of all the relevant data from every link present in the file 
+				      all_recipe_links.txt
+
+4. ADM_heapfunctions.py : Contains the heap-sort function and other heap functions used to sort the search engine 
+			  results ( for faster processing ) 
+
+5. ADM_Inverted_Index.ipynb : Builds the inverted index for the search engine. The file is built with the name 
+                              inverted_index.p
+
+6. ADM_Query_Processing.ipynb : This script is for query processing. Maps documents and queries in vector space, 
+                                calculates relevant scores between the query and documents, heap sorts the results
+                                and displays the ranked results. 
+				   
+######################################################################################################################
