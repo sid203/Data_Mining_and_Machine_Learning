@@ -1,0 +1,17 @@
+######################################################################################################################################################################
+
+Description of the files: 
+
+1. LFM_Preprocessing.ipynb: Processesing of the train files to row normalize and also column normalize the data. 
+
+2. LFM_Stochastic_Gradient_Descent-Copy1.ipynb : Using the preprocessed training files, this script breaks down the original matrices into three smaller ones,
+						 using SVD and then tries to minimize the error function through stochastic gradient descent. All of this procedure
+						 would fill the  empty ratings of the 5 training files. These filled matrices will be used for online recommendations.
+
+3. LFM_Stochastic_Gradient_Descent_Online.ipynb: Using the filled matrices and collaborative filtering, this script will predict ratings for the items in the text file
+                                                 'new_user.txt'
+
+4. LFM_MAE_Calculation.ipynb : Calculates the mean squared error between final predictions generated in the 2nd script and the corresponding test files.
+
+
+######################################################################################################################################################################
