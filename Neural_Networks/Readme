@@ -1,0 +1,30 @@
+########################################################################################################################################################################
+
+Neural Networks-----
+
+
+Summary: 
+
+This notebook walks through single layer Multilayer Perceptron Networks and single layer Radial Basis Function Networks. Variations of both these such as the Extreme learning MLP ( where the input weights are randomly initialized and only the output layer weights are optimized ), Unsupervised RBFs in which the hidden layer centroids are chosen through unsupervised learning ( example : K-Means ). Then finally a Two Block decomposition scheme for the RBF networks is presented. In this particular scheme, the output layer weights and hidden layer centroids are optimized one step at a time untill the gradient of the loss with respect to the centers is small enough.
+
+
+Description of files: 
+
+1. A) Functions_homework1_question1_7.py : Consists of the functions for implementing both the MLP and RBF Networks , in which the parameters are optimized through     scipy.optimize.minimize. 
+   B) Main_homework1_question1_7.py : Main file to generate the plots and predict on the optimal hyperparameters. Please note Main files are already fed with the hyperparameters after doing a gridsearch on all the hyperparameters. 
+
+2. A) Functions_homework1_question2_7.py : Consists of the functions for implementing the Extreme learning MLP and Unsupervised RBF Networks , in which the parameters. In Extreme learning MLPs, only the output weights are optimized , and rest of the parameters are randomly chosen. Thus these are faster than the Full MLP. 
+In case of Unsupervised RBF networks, the performance is fairly better because of the fact that centers are chosen through K-Means. 
+
+   B) Main_homework1_question2_7.py : Main file to generate the plots and run predict on the optimal hyperparameters. Please note Main files are already fed with the hyperparameters after doing a gridsearch on all the hyperparameters. 
+
+
+3. A) Functions_homework1_question3_7.py : Consists of the functions for implementing the two block decomposition method. The research paper which corresponding to this algorithm is here: https://www.ncbi.nlm.nih.gov/pubmed/11506675 
+   B) Main_homework1_question3_7.py : Main file to generate the plots and predict on the optimal hyperparameters after running the two-block function. Estimated time for this to complete is around 300 seconds.
+
+4. Neural_Networks.ipynb: Jupyter notebook to present the above work in a presentable manner. 
+
+5. omml.pdf : Report presenting the performance comparison among all of the above networks. 
+
+
+
